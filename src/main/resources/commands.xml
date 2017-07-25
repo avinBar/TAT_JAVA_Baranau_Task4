@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands xmlns="http://www.rdtc.by/library/commands"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.rdtc.by/library/commands commands.xsd">
+	<role title="guest">
+		<command name="register">
+			<path>by.rdtc.library.controller.impl.guest.Registration</path>
+		</command>
+		<command name="sign_in">
+			<path>by.rdtc.library.controller.impl.guest.SignIn</path>
+		</command>
+		<command name="show_books">
+			<path>by.rdtc.library.controller.impl.guest.ShowBooks</path>
+		</command>
+	</role>
+	<role title="user">
+		<command name="cancel_order">
+			<path>by.rdtc.library.controller.impl.user.CancelOrder</path>
+		</command>
+		<command name="edit_profile">
+			<path>by.rdtc.library.controller.impl.user.EditProfile</path>
+		</command>
+		<command name="order_book">
+			<path>by.rdtc.library.controller.impl.user.OrderBook</path>
+		</command>
+		<command name="show_profile">
+			<path>by.rdtc.library.controller.impl.user.ShowProfile</path>
+		</command>
+		<command name="sign_out">
+			<path>by.rdtc.library.controller.impl.user.SingOut</path>
+		</command>
+		<command name="view_book">
+			<path>by.rdtc.library.controller.impl.user.ViewBook</path>
+		</command>
+		<command name="view_orders">
+			<path>by.rdtc.library.controller.impl.user.ViewOrders</path>
+		</command>
+	</role>
+	<role title="admin">
+		<command name="add_book">
+			<path>by.rdtc.library.controller.impl.admin.AddBook</path>
+		</command>
+		<command name="ban_user">
+			<path>by.rdtc.library.controller.impl.admin.BanUser</path>
+		</command>
+		<command name="return_book">
+			<path>by.rdtc.library.controller.impl.admin.ConfirmReturn</path>
+		</command>
+		<command name="delete_book">
+			<path>by.rdtc.library.controller.impl.admin.DeleteBook</path>
+		</command>
+		<command name="delivery_order">
+			<path>by.rdtc.library.controller.impl.admin.DeliveryOrder</path>
+		</command>
+		<command name="edit_book">
+			<path>by.rdtc.library.controller.impl.admin.EditBook</path>
+		</command>
+		<command name="unban_user">
+			<path>by.rdtc.library.controller.impl.admin.UnbanUser</path>
+		</command>
+		<command name="give_admin_role">
+			<path>by.rdtc.library.controller.impl.admin.UserToAdmin</path>
+		</command>
+		<command name="view_all_users">
+			<path>by.rdtc.library.controller.impl.admin.ViewAllUser</path>
+		</command>
+		<command name="view_users_orders">
+			<path>by.rdtc.library.controller.impl.admin.ViewUsersOrders</path>
+		</command>
+	</role>
+	<role title="super_admin">
+		<command name="remove_admin">
+			<path>by.rdtc.library.controller.impl.super_admin.AdminToUser</path>
+		</command>
+	</role>
+</commands>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.rdtc.by/library/commands"
+	xmlns:tns="http://www.rdtc.by/library/commands" elementFormDefault="qualified">
+	<element name="commands">
+		<complexType>
+			<sequence>
+				<element name="role" type="tns:Role" minOccurs="1"
+					maxOccurs="4" />
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="Role">
+		<sequence>
+			<element name="command" type="tns:Command" minOccurs="1"
+				maxOccurs="unbounded"  />
+		</sequence>
+		<attribute name="title" type="string" use="required" />
+	</complexType>
+	<complexType name="Command">
+		<sequence>
+			<element name="path" type="string" />
+		</sequence>
+		<attribute name="name" type="string" use="required" />
+	</complexType>
+</schema>
